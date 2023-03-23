@@ -7,8 +7,8 @@
   
   tasks:
     - name: install httpd
-      action: yum pkg=httpd state=present
-    - name: start httpd
+      action: yum name=httpd state=present
+    - name: start apache httpd
       action: service name=httpd state=started
     - name: copy index
       action: copy src=index.html dest=/var/www/html/
