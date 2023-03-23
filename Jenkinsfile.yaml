@@ -1,5 +1,5 @@
 #target section
-- hosts: devlinux[0]
+- hosts: devlinux
   user: velocity
   become: yes
   connection: ssh
